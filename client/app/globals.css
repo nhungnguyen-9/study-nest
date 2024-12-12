@@ -275,7 +275,7 @@ input[type="color"] {
 }
 
 .landing__tags {
-  @apply flex flex-wrap gap-4 mb-8;
+  @apply flex flex-wrap gap-4 mb-8 pt-2;
 }
 
 .landing__tag {
