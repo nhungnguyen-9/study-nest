@@ -57,7 +57,7 @@ declare global {
     transactionId: string;
     dateTime: string;
     courseId: string;
-    paymentProvider: "stripe";
+    paymentProvider: "vnpay";
     paymentMethodId?: string;
     amount: number; // Stored in cents
     savePaymentMethod?: boolean;
@@ -208,4 +208,4 @@ declare global {
   }
 }
 
-export {};
+export { };

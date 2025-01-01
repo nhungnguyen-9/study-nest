@@ -1353,7 +1353,7 @@ input[type="color"] {
 }
 
 .course-card-search__teacher {
-  @apply text-customgreys-dirtyGrey text-sm;
+  @apply text-customgreys-dirtyGrey text-sm mt-2;
 }
 
 .course-card-search__footer {

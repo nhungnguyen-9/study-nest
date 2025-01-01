@@ -44,6 +44,7 @@ const helmet_1 = __importDefault(require("helmet"));
 const morgan_1 = __importDefault(require("morgan"));
 const dynamoose = __importStar(require("dynamoose"));
 // route imports
+const courseRoutes_1 = __importDefault(require("./routes/courseRoutes"));
 // config
 dotenv_1.default.config();
 const isProd = process.env.NODE_ENV === "production";
@@ -62,6 +63,7 @@ app.use((0, cors_1.default)());
 app.get("/", (req, res) => {
     res.send('hello Orm');
 });
+app.use("/courses", courseRoutes_1.default);
 // server
 const port = process.env.PORT || 3000;
 if (!isProd) {

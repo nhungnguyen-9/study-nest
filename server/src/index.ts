@@ -6,9 +6,8 @@ import helmet from 'helmet'
 import morgan from 'morgan'
 import * as dynamoose from 'dynamoose'
 import { log } from 'console'
-
 // route imports
-
+import courseRoutes from "./routes/courseRoutes"
 
 // config
 dotenv.config()
@@ -31,6 +30,9 @@ app.use(cors())
 app.get("/", (req, res) => {
     res.send('hello Orm')
 })
+
+app.use("/courses", courseRoutes)
+
 
 // server
 const port = process.env.PORT || 3000

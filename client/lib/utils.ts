@@ -10,10 +10,10 @@ export function cn(...inputs: ClassValue[]) {
 
 // Convert cents to formatted currency string (e.g., 4999 -> "$49.99")
 export function formatPrice(cents: number | undefined): string {
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("vi-VN", {
     style: "currency",
-    currency: "USD",
-  }).format((cents || 0) / 100);
+    currency: "VND",
+  }).format((cents || 0));
 }
 
 // Convert dollars to cents (e.g., "49.99" -> 4999)
