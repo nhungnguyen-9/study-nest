@@ -8,18 +8,21 @@ export const NonDashboardNavbar = () => {
         <nav className="nondashboard-navbar">
             <div className="nondashboard-navbar__container">
                 <div className="nondashboard-navbar__search">
-                    <Link href='/' className="nondashboard-navbar__brand">
+                    <Link href='/' className="nondashboard-navbar__brand" scroll={false}>
                         STUDY NEST
                     </Link>
                     <div className="flex items-center gap-4">
                         <div className="nondashboard-navbar__search-cont group">
-                            <Link href='/search' className="nondashboard-navbar__search-input">
-                                <span className="hidden sm:inline">
-                                    Tìm kiếm khóa học
-                                </span>
+                            <Link
+                                href="/search"
+                                className="nondashboard-navbar__search-input"
+                                scroll={false}
+                            >
+                                <span className="hidden sm:inline">Tìm kiếm khóa học</span>
                             </Link>
                             <BookOpen
                                 className="nondashboard-navbar__search-icon"
+                                size={18}
                             />
                         </div>
                     </div>

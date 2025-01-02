@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { NonDashboardNavbar } from "@/components/NonDashboardNavbar";
 
 export default function Layout({
@@ -11,6 +12,7 @@ export default function Layout({
             <main className="nondashboard-layout__main">
                 {children}
             </main>
+            <Footer />
         </div>
     );
 }

@@ -1,3 +1,4 @@
+import { AccordionSections } from '@/components/AccordionSection'
 import { Button } from '@/components/ui/button'
 import { formatPrice } from '@/lib/utils'
 import React from 'react'
@@ -29,6 +30,9 @@ export const SelectedCourse = ({
                         Nội dung khóa học
                     </h4>
                     {/* accordion sections */}
+                    <AccordionSections
+                        sections={course.sections}
+                    />
                 </div>
 
                 <div className='selected-course__footer'>
@@ -36,8 +40,8 @@ export const SelectedCourse = ({
                         {formatPrice(course.price)}
                     </span>
                     <Button
-                        className="bg-primary-700 hover:bg-primary-600"
                         onClick={() => handleEnrollNow(course.courseId)}
+                        className="selected-course__button"
                     >
                         Đăng ký ngay
                     </Button>

@@ -155,6 +155,10 @@ input[type="color"] {
   @apply text-white-50 font-semibold text-3xl;
 }
 
+.selected-course__button {
+  @apply bg-primary-700 hover:bg-primary-600 p-2 font-semibold rounded-md;
+}
+
 .selected-course__author {
   @apply text-gray-400 text-sm pt-3;
 }
@@ -275,7 +279,7 @@ input[type="color"] {
 }
 
 .landing__tags {
-  @apply flex flex-wrap gap-4 mb-8 pt-2;
+  @apply flex flex-wrap gap-4 mb-8;
 }
 
 .landing__tag {
@@ -953,7 +957,7 @@ input[type="color"] {
 }
 
 .accordion-section__trigger {
-  @apply hover:bg-gray-700/50 bg-customgreys-primarybg/50 px-4 py-3;
+  @apply flex w-full justify-between items-center hover:bg-gray-700/50 bg-customgreys-primarybg/50 px-4 py-3;
 }
 
 .accordion-section__title {
@@ -965,7 +969,7 @@ input[type="color"] {
 }
 
 .accordion-section__chapter {
-  @apply flex items-center text-gray-400/90 py-1;
+  @apply flex gap-1 items-center text-gray-400/90 py-1;
 }
 
 /* Course Card */
@@ -1353,7 +1357,7 @@ input[type="color"] {
 }
 
 .course-card-search__teacher {
-  @apply text-customgreys-dirtyGrey text-sm mt-2;
+  @apply text-customgreys-dirtyGrey text-sm;
 }
 
 .course-card-search__footer {

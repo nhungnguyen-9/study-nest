@@ -1,5 +1,4 @@
 import { NonDashboardNavbar } from "@/components/NonDashboardNavbar";
-import "./globals.css";
 import { Landing } from "./(nondashboard)/landing/page";
 import { Footer } from "@/components/Footer";
 
